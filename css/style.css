@@ -11,6 +11,25 @@ img {
     max-width: 100%;
 }
 
+/* skip link */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #DED194;
+  color: #376155;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 10000;
+}
+
+.skip-link:focus {
+  top: 0; /* bliver synlig ved tab */
+}
+
 /* knapper */
 .btn {
     display: inline-block;
@@ -375,7 +394,7 @@ footer {
   background-color: #E3E2D6;
 }
 
-.om img {
+.om video {
   width: 100%;
   height: auto;
   display: block;
