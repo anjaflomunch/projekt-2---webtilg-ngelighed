@@ -12,28 +12,28 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Spring til hovedindhold</a>
     <!-- navigation -->
     <header>
         <a href="index.html" aria-label="Gå til forsiden">
             <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
         </a>
 
-        <nav>
+        <nav aria-label="Hovednavigation">
             <ul>
                 <li><a href="pauser.html">Guidede pauser</a></li>
-                <li><a href="#">Hvorfor pauser?</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
 
-        <button id="bars" aria-label="Åben menu">
+        <button id="bars" aria-label="Åbn menu">
             <i class="fa-solid fa-bars"></i>
         </button>
 
     </header>
 
     <!-- hovedindhold -->
-    <main>
+    <main id="main-content">
         <section class="hero">
             <video autoplay muted loop playsinline aria-hidden="true">
                 <source src="video/hero baggrund1.mp4" type="video/mp4">
