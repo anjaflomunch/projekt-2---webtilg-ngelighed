@@ -32,22 +32,23 @@ img {
 
 /* knapper */
 .btn {
-    display: inline-block;
-    background-color: #DED194;
-    font-size: 1rem;
-    color: #376155;          
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 1.25rem 1.88rem;        
-    border-radius: 3.75rem;      
-    margin-top: 2.5rem; 
-    min-width: 12.5rem; 
+  display: inline-block;
+  background-color: #DED194;
+  font-size: 1rem;
+  color: #376155;          
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1.25rem 1.88rem;        
+  border-radius: 3.75rem;      
+  margin-top: 2.5rem; 
+  min-width: 12.5rem; 
+  box-shadow: 0 4px 10px rgba(55, 97, 85, 0.15);
 }
 
 .btn:hover {
-    background-color: #376155;
-    color: #EBEAE2;
+  background-color: #376155;
+  color: #EBEAE2;
 }
 
 /* tekst */
@@ -358,6 +359,7 @@ footer {
   background: #E3E2D6;
   border-radius: 1.25rem;
   padding: 2.5rem 0.63rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pauser .col p {
@@ -375,10 +377,10 @@ footer {
 
 @media screen and (min-width: 769px) {
 .pauser-container{
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 1em;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 1em;
 }
 
 .pauser .col {
@@ -396,7 +398,7 @@ footer {
 
 .om video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -428,7 +430,7 @@ footer {
     align-items: start;
   }
 
-  .om img {
+  .om video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -445,45 +447,104 @@ footer {
 
 /* ----------- KONTAKT ----------- */
 
+.kontakt-page {
+  background-color: #F5F4F2;
+}
+
+/* ----- hero ----- */
+.kontakt-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.kontakt-hero p {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  color: #376155;
+  font-size: 1.2rem;
+}
+.kontakt-hero h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #568678;
+}
+
+/* --- kontaktfomular --- */
 .kontaktform {
-  border-radius: 5px;
-  background-color: #EBEAE2;
-  padding: 1.3em;
-  width: 50%;
-  margin: 0 auto; /*Centrerer elementet på siden*/
+  padding: 2rem 1.25rem 3rem;
+}
+.kontaktform form {
+  max-width: 46rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  background: #EBEAE2;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-  width: 100%; /*Gør input felterne 100% af forælderens bredde*/
-  padding: 1em;
+/* labels */
+.kontaktform label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #376155;
+  font-size: 0.95rem;
+}
+
+/* inputfelter */
+.kontaktform input[type="text"],
+.kontaktform input[type="email"],
+.kontaktform select,
+.kontaktform textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #C2BFB0;
+  border-radius: 0.75rem;
+  background: #F5F4F2;
+  color: #376155;
+  font-size: 1rem;
+}
+
+/* fokus */
+.kontaktform input:focus-visible,
+.kontaktform select:focus-visible,
+.kontaktform textarea:focus-visible {
+  outline: none;
+  border-color: #568678;
+  box-shadow: 0 0 0 4px #DED194;
+}
+
+/* submit-knap */
+.kontaktform input[type="submit"] {
+  justify-self: center;
+  width: auto;
+  background-color: #DED194;
+  color: #376155;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1.1rem 1.6rem;
+  border-radius: 3rem;
   border: none;
-  border-radius: 4px;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(55, 97, 85, 0.15);
 }
 
-fieldset {
-  border-style: none;
-  margin-bottom: 0.8em;
+.kontaktform input[type="submit"]:hover {
+  background-color: #376155;
+  color: #EBEAE2;
 }
 
-input[type="checkbox"] {
-  margin: 0.8em 0em;
+/* ----- desktop kontakt ----- */
+@media (min-width: 769px) {
+.kontaktform {
+  padding: 3rem 2rem 4rem;
 }
 
-input[type="submit"] {
-    background-color: #DED194;
-    font-size: 1rem;
-    color: #376155;          
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 1.25rem 1.88rem;        
-    border-radius: 3.75rem;      
-    margin-top: 2.5rem; 
-    min-width: 12.5rem; 
+.kontaktform form {
+  padding: 2rem; gap: 1.1rem; 
+}
 }

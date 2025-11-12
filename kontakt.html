@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/f72245a13d.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="kontakt-page">
 
   <!-- Header -->
   <header>
@@ -24,40 +24,37 @@
     </nav>
   </header>
 
-  <!-- Hovedindhold -->
 <main>
-    <div>
+    <section class="kontakt-hero">
         <p>Har du noget på hjertet?</p>
-        <h1>Du er altid velkommen til at kontakte os </h1>
-    </div>
+        <h2>Du er altid velkommen<br>
+            til at kontakte os</h2>
+    </section>
 
-   <main class="kontaktform">
+    <section class="kontaktform">
         <form>
             <label for="navn">Navn</label>
-            <input id="navn" type="text"required>
+            <input id="navn" type="text" required>
 
-            <label for="mail">E-mail </label>
-            <input id="mail" type="email"required>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" required>
 
-            <!-- dropdown -->
-             <div class="custom select">
-                <label for="emne">Emne</label>
+            <label for="emne">Emne</label>
                 <select id="emne" required>
-                    <option value="0" selected="true" disabled>Vælg emne</option>
-                    <option value="1">Spørgsmål</option>
-                    <option value="2">Ris/ros</option>
-                    <option value="3">Andet</option>
+                    <option value="" selected disabled>Vælg emne</option>
+                    <option value="spm">Spørgsmål</option>
+                    <option value="risros">Ris/ros</option>
+                    <option value="andet">Andet</option>
                 </select>
-             </div>
-
+        
             <label for="besked">Besked</label>
-            <textarea id="besked" cols="30" rows="10" required></textarea>
+                <textarea id="besked" cols="30" rows="10" requied></textarea>
 
-            <input type="submit" name="submit" value="Send besked">
-
-        </form>
-
+            <input type="submit" value="Send besked">
+    </form>
+    </section>
 </main>
+
 
   <!-- Footer -->
   <footer>
