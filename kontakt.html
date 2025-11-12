@@ -25,19 +25,52 @@
   </header>
 
   <!-- Hovedindhold -->
-<main></main>
+<main>
+    <div>
+        <p>Har du noget på hjertet?</p>
+        <h1>Du er altid velkommen til at kontakte os </h1>
+    </div>
+
+   <main class="kontaktform">
+        <form>
+            <label for="navn">Navn</label>
+            <input id="navn" type="text"required>
+
+            <label for="mail">E-mail </label>
+            <input id="mail" type="email"required>
+
+            <!-- dropdown -->
+             <div class="custom select">
+                <label for="emne">Emne</label>
+                <select id="emne" required>
+                    <option value="0" selected="true" disabled>Vælg emne</option>
+                    <option value="1">Spørgsmål</option>
+                    <option value="2">Ris/ros</option>
+                    <option value="3">Andet</option>
+                </select>
+             </div>
+
+            <label for="besked">Besked</label>
+            <textarea id="besked" cols="30" rows="10" required></textarea>
+
+            <input type="submit" name="submit" value="Send besked">
+
+        </form>
+
+</main>
 
   <!-- Footer -->
   <footer>
     <div class="footer-container">
-      <img src="img/GMAB - logo.png" alt="Give Me A Break logo" class="footer-logo">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="guidede-pauser.html">Guidede pauser</a></li>
-          <li><a href="#">Hvorfor pauser?</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+        <a href="index.html" aria-label="Gå til forsiden">
+                <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
+         </a>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="guidede-pauser.html">Guidede pauser</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </div>
   </footer>
 
