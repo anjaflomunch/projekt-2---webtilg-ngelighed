@@ -34,12 +34,16 @@ img {
 .btn {
   display: inline-block;
   background-color: #DED194;
+  font-family: 'josefin sans', sans-serif;
   font-size: 1rem;
   color: #376155;          
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 1.25rem 1.88rem;        
+  letter-spacing: 0.05em;
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem; 
+  padding-right: 2rem;          
   border-radius: 3.75rem;      
   margin-top: 2.5rem; 
   min-width: 12.5rem; 
@@ -155,6 +159,11 @@ nav li a:hover {
     color: #DED194;
 }
 
+nav a.active {
+  color: #DED194;
+}
+
+
 /* hamburger */
 .show {
     display: block;
@@ -236,8 +245,7 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.13rem;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
 .footer-nav a:hover {
@@ -442,7 +450,7 @@ footer {
 
 /* ----------- KONTAKT ----------- */
 
-.kontakt-page {
+.kontakt-side {
   background-color: #F5F4F2;
 }
 
@@ -461,21 +469,26 @@ footer {
   color: #376155;
   font-size: 1.2rem;
 }
-.kontakt-hero h2 {
+.kontakt-hero h1 {
   margin-top: 0.5rem;
   margin-bottom: 0;
   color: #568678;
+  font-size: 2rem;
 }
 
 /* --- kontaktfomular --- */
 .kontaktform {
-  padding: 2rem 1.25rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
+
 .kontaktform form {
   max-width: 46rem;
   margin: 0 auto;
   display: grid;
-  gap: 1rem;
+  gap: 0.8rem;
   background: #EBEAE2;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -484,11 +497,13 @@ footer {
 
 /* labels */
 .kontaktform label {
-  font-weight: 600;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #376155;
-  font-size: 0.95rem;
+  color: #568678;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 /* inputfelter */
@@ -502,7 +517,7 @@ footer {
   border-radius: 0.75rem;
   background: #F5F4F2;
   color: #376155;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* fokus */
@@ -527,6 +542,7 @@ footer {
   cursor: pointer;
   font-size: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
 }
 
 .kontaktform input[type="submit"]:hover {
@@ -543,6 +559,10 @@ footer {
 .kontaktform form {
   padding: 2rem; gap: 1.1rem; 
 }
+}
+
+.kontakt-hero h1 {
+  font-size: 2.6rem;
 }
 
 /* ----------- GUIDEDE PAUSER ----------- */

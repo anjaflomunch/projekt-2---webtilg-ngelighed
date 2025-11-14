@@ -8,10 +8,10 @@
   <script src="https://kit.fontawesome.com/f72245a13d.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="kontakt-page">
+<body class="kontakt-side">
 
   <!-- Header -->
-  <header>
+   <header>
     <a href="index.html" aria-label="Gå til forsiden">
       <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
     </a>
@@ -19,55 +19,55 @@
     <nav>
       <ul>
         <li><a href="pauser.html">Guidede pauser</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
 <main>
-    <section class="kontakt-hero">
-        <p>Har du noget på hjertet?</p>
-        <h2>Du er altid velkommen<br>
-            til at kontakte os</h2>
-    </section>
+  <section class="kontakt-hero">
+    <p>Har du noget på hjertet?</p>
+    <h1>Du er altid velkommen<br>
+        til at kontakte os</h1>
+  </section>
 
-    <section class="kontaktform">
-        <form>
-            <label for="navn">Navn</label>
-            <input id="navn" type="text" required>
+  <section class="kontaktform">
+    <form>
+      <label for="navn">Navn</label>
+      <input id="navn" type="text" required>
 
-            <label for="email">E-mail</label>
-            <input id="email" type="email" required>
+      <label for="email">E-mail</label>
+      <input id="email" type="email" required>
 
-            <label for="emne">Emne</label>
-                <select id="emne" required>
-                    <option value="" selected disabled>Vælg emne</option>
-                    <option value="spm">Spørgsmål</option>
-                    <option value="risros">Ris/ros</option>
-                    <option value="andet">Andet</option>
-                </select>
+      <label for="emne">Emne</label>
+        <select id="emne" required>
+          <option value="" selected disabled>Vælg emne</option>
+            <option value="spm">Spørgsmål</option>
+            <option value="risros">Ris/ros</option>
+            <option value="andet">Andet</option>
+        </select>
         
-            <label for="besked">Besked</label>
-                <textarea id="besked" cols="30" rows="10" requied></textarea>
+      <label for="besked">Besked</label>
+      <textarea id="besked" cols="30" rows="6" requied></textarea>
 
-            <input type="submit" value="Send besked">
+      <input type="submit" value="Send besked">
     </form>
-    </section>
+  </section>
 </main>
 
 
   <!-- Footer -->
   <footer>
     <div class="footer-container">
-        <a href="index.html" aria-label="Gå til forsiden">
-                <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
-         </a>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="guidede-pauser.html">Guidede pauser</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="index.html" aria-label="Gå til forsiden">
+        <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
+      </a>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="guidede-pauser.html">Guidede pauser</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
 
