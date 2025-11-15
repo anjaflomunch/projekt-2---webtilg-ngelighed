@@ -1,3 +1,5 @@
+<!-- KONTAKT -->
+ 
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -11,10 +13,10 @@
 <body class="kontakt-side">
   <a href="#main-content" class="skip-link">Spring til hovedindhold</a>
 
-  <!-- Header -->
+<!-- HEADER OG NAVIGATION -->
    <header>
     <a href="index.html" aria-label="Gå til forsiden">
-      <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
+      <img class="logo" src="img/logo.png" alt="Give Me a Break logo">
     </a>
 
     <nav>
@@ -25,14 +27,13 @@
     </nav>
   </header>
 
-<main>
-  <section class="kontakt-hero">
-    <p>Har du noget på hjertet?</p>
-    <h1>Du er altid velkommen<br>
-        til at kontakte os</h1>
-  </section>
+<main id="main-content">
 
+  <!-- kontaktformular -->
   <section class="kontaktform">
+    <p>Har du noget på hjertet?</p>
+    <h1>Du er altid velkommen til at skrive til os</h1>
+
     <form>
       <label for="navn">Navn</label>
       <input id="navn" type="text" required>
@@ -41,27 +42,29 @@
       <input id="email" type="email" required>
 
       <label for="emne">Emne</label>
-        <select id="emne" required>
-          <option value="" selected disabled>Vælg emne</option>
-            <option value="spm">Spørgsmål</option>
-            <option value="risros">Ris/ros</option>
-            <option value="andet">Andet</option>
-        </select>
-        
+      <select id="emne" required>
+        <option value="" selected disabled>Vælg emne</option>
+        <option value="spm">Spørgsmål</option>
+        <option value="risros">Ris/ros</option>
+        <option value="andet">Andet</option>
+      </select>
+
       <label for="besked">Besked</label>
       <textarea id="besked" cols="30" rows="6" required></textarea>
 
       <input type="submit" value="Send besked">
     </form>
   </section>
+
 </main>
 
 
-  <!-- Footer -->
+<!-- FOOTER -->
+
   <footer>
     <div class="footer-container">
       <a href="index.html" aria-label="Gå til forsiden">
-        <img class="logo" src="img/GMAB - logo.png" alt="Give Me a Break logo">
+        <img class="logo" src="img/logo.png" alt="Give Me a Break logo">
       </a>
       <nav class="footer-nav">
         <ul>
